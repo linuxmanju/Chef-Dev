@@ -1,0 +1,92 @@
+I, [2016-12-08T21:19:00.334562 #4527]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2016-12-08T21:19:02.469193 #4527]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-12-08T21:19:02.747563 #4527]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'bento/ubuntu-14.04'...
+I, [2016-12-08T21:19:10.970101 #4527]  INFO -- default-ubuntu-1404: [KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-12-08T21:19:11.090755 #4527]  INFO -- default-ubuntu-1404: ==> default: Checking if box 'bento/ubuntu-14.04' is up to date...
+I, [2016-12-08T21:19:11.758391 #4527]  INFO -- default-ubuntu-1404: ==> default: A newer version of the box 'bento/ubuntu-14.04' is available! You currently
+I, [2016-12-08T21:19:11.758448 #4527]  INFO -- default-ubuntu-1404: ==> default: have version '2.3.0'. The latest is version '2.3.1'. Run
+I, [2016-12-08T21:19:11.758470 #4527]  INFO -- default-ubuntu-1404: ==> default: `vagrant box update` to update.
+I, [2016-12-08T21:19:12.222783 #4527]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: kitchen-cookbooks-default-ubuntu-1404_default_1481249952174_99006
+I, [2016-12-08T21:19:13.249619 #4527]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2016-12-08T21:19:13.293602 #4527]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2016-12-08T21:19:13.293837 #4527]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2016-12-08T21:19:13.335519 #4527]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2016-12-08T21:19:13.402927 #4527]  INFO -- default-ubuntu-1404:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2016-12-08T21:19:13.545377 #4527]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2016-12-08T21:19:13.829866 #4527]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-12-08T21:19:14.091980 #4527]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2222
+I, [2016-12-08T21:19:14.092104 #4527]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2016-12-08T21:19:14.092266 #4527]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2016-12-08T21:19:29.801815 #4527]  INFO -- default-ubuntu-1404:     default: 
+I, [2016-12-08T21:19:29.801874 #4527]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2016-12-08T21:19:29.801902 #4527]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2016-12-08T21:19:30.005708 #4527]  INFO -- default-ubuntu-1404:     default: 
+I, [2016-12-08T21:19:30.005762 #4527]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2016-12-08T21:19:30.050023 #4527]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if it's present...
+I, [2016-12-08T21:19:30.090532 #4527]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2016-12-08T21:19:30.884799 #4527]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2016-12-08T21:19:30.885419 #4527]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2016-12-08T21:19:30.933373 #4527]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2016-12-08T21:19:31.060496 #4527]  INFO -- default-ubuntu-1404: ==> default: Mounting shared folders...
+I, [2016-12-08T21:19:31.060750 #4527]  INFO -- default-ubuntu-1404:     default: /tmp/omnibus/cache => /Users/manju/.kitchen/cache
+I, [2016-12-08T21:19:31.331130 #4527]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-12-08T21:19:34.183566 #4527]  INFO -- default-ubuntu-1404: [SSH] Established
+I, [2016-12-08T21:19:34.183860 #4527]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2016-12-08T21:19:34.185620 #4527]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m33.85s).
+I, [2016-12-08T21:19:34.185752 #4527]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2016-12-08T21:19:34.186282 #4527]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-12-08T21:19:34.186375 #4527]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-12-08T21:19:34.186678 #4527]  INFO -- default-ubuntu-1404: Berksfile, Cheffile, cookbooks/, or metadata.rb not found so Chef will run with effectively no cookbooks. Is this intended?
+I, [2016-12-08T21:19:34.187078 #4527]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-12-08T21:19:34.188310 #4527]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2016-12-08T21:19:34.196447 #4527]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-12-08T21:19:34.196710 #4527]  INFO -- default-ubuntu-1404: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2016-12-08T21:19:34.196977 #4527]  INFO -- default-ubuntu-1404: Trying wget...
+I, [2016-12-08T21:19:34.713107 #4527]  INFO -- default-ubuntu-1404: Download complete.
+I, [2016-12-08T21:19:34.723894 #4527]  INFO -- default-ubuntu-1404: ubuntu 14.04 x86_64
+I, [2016-12-08T21:19:34.724070 #4527]  INFO -- default-ubuntu-1404: Getting information for chef stable  for ubuntu...
+I, [2016-12-08T21:19:34.724186 #4527]  INFO -- default-ubuntu-1404: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
+I, [2016-12-08T21:19:34.724348 #4527]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1478/metadata.txt
+I, [2016-12-08T21:19:34.724469 #4527]  INFO -- default-ubuntu-1404: trying wget...
+I, [2016-12-08T21:19:35.209383 #4527]  INFO -- default-ubuntu-1404: sha1	e720803538b5db3cc9924121e3aa9e5a7a03cf79
+I, [2016-12-08T21:19:35.209793 #4527]  INFO -- default-ubuntu-1404: sha256	48e574a90ed653e1fcc3efacf89ad447273dece6b8c41f5376acebbb17909034
+I, [2016-12-08T21:19:35.210170 #4527]  INFO -- default-ubuntu-1404: url	https://packages.chef.io/files/stable/chef/12.16.42/ubuntu/14.04/chef_12.16.42-1_amd64.deb
+I, [2016-12-08T21:19:35.210432 #4527]  INFO -- default-ubuntu-1404: version	12.16.42
+I, [2016-12-08T21:19:35.211862 #4527]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2016-12-08T21:19:35.216173 #4527]  INFO -- default-ubuntu-1404: downloading https://packages.chef.io/files/stable/chef/12.16.42/ubuntu/14.04/chef_12.16.42-1_amd64.deb
+I, [2016-12-08T21:19:35.216342 #4527]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1478/chef_12.16.42-1_amd64.deb
+I, [2016-12-08T21:19:35.216584 #4527]  INFO -- default-ubuntu-1404: trying wget...
+I, [2016-12-08T21:26:21.060216 #4527]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2016-12-08T21:26:21.359960 #4527]  INFO -- default-ubuntu-1404: 
+I, [2016-12-08T21:26:21.360296 #4527]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-12-08T21:26:21.360436 #4527]  INFO -- default-ubuntu-1404: 
+I, [2016-12-08T21:26:21.360715 #4527]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-12-08T21:26:21.361130 #4527]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-12-08T21:26:21.361389 #4527]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
+I, [2016-12-08T21:26:21.361786 #4527]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-12-08T21:26:21.362108 #4527]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2016-12-08T21:26:21.362252 #4527]  INFO -- default-ubuntu-1404: 
+I, [2016-12-08T21:26:21.362725 #4527]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-12-08T21:26:21.362999 #4527]  INFO -- default-ubuntu-1404: 
+I, [2016-12-08T21:26:21.364783 #4527]  INFO -- default-ubuntu-1404: Installing chef 
+I, [2016-12-08T21:26:21.364838 #4527]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2016-12-08T21:26:21.463082 #4527]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2016-12-08T21:26:21.782700 #4527]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36676 files and directories currently installed.)
+I, [2016-12-08T21:26:21.784924 #4527]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.16.42-1_amd64.deb ...
+I, [2016-12-08T21:26:21.790374 #4527]  INFO -- default-ubuntu-1404: Unpacking chef (12.16.42-1) ...
+I, [2016-12-08T21:26:28.298820 #4527]  INFO -- default-ubuntu-1404: Setting up chef (12.16.42-1) ...
+I, [2016-12-08T21:26:28.359917 #4527]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2016-12-08T21:26:28.404102 #4527]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-12-08T21:26:29.283666 #4527]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.16.42
+I, [2016-12-08T21:26:30.660387 #4527]  INFO -- default-ubuntu-1404: Creating a new client identity for default-ubuntu-1404 using the validator key.
+I, [2016-12-08T21:26:30.708737 #4527]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: []
+I, [2016-12-08T21:26:30.710282 #4527]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2016-12-08T21:26:30.711159 #4527]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2016-12-08T21:26:30.712442 #4527]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2016-12-08T21:26:30.712857 #4527]  INFO -- default-ubuntu-1404: [2016-12-09T02:26:30+00:00] WARN: Node default-ubuntu-1404 has an empty run list.
+I, [2016-12-08T21:26:30.713117 #4527]  INFO -- default-ubuntu-1404: Converging 0 resources
+I, [2016-12-08T21:26:30.747432 #4527]  INFO -- default-ubuntu-1404: 
+I, [2016-12-08T21:26:30.747773 #4527]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2016-12-08T21:26:30.747996 #4527]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2016-12-08T21:26:30.748197 #4527]  INFO -- default-ubuntu-1404: Chef Client finished, 0/0 resources updated in 01 seconds
+I, [2016-12-08T21:26:30.795416 #4527]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (6m56.61s).

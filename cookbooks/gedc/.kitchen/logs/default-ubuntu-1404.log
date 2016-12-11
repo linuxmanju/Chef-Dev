@@ -1,0 +1,86 @@
+I, [2016-12-08T22:31:34.960423 #5063]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2016-12-08T22:31:34.960936 #5063]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-12-08T22:31:34.961026 #5063]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-12-08T22:31:34.961413 #5063]  INFO -- default-ubuntu-1404: Preparing current project directory as a cookbook
+I, [2016-12-08T22:31:34.965859 #5063]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-12-08T22:31:34.968449 #5063]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2016-12-08T22:31:35.173017 #5063]  INFO -- default-ubuntu-1404: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-12-08T22:31:35.183098 #5063]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-12-08T22:31:36.063900 #5063]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.16.42
+I, [2016-12-08T22:31:37.308948 #5063]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["gedc::default"]
+I, [2016-12-08T22:31:37.311028 #5063]  INFO -- default-ubuntu-1404: 
+I, [2016-12-08T22:31:37.311265 #5063]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2016-12-08T22:31:37.311538 #5063]  INFO -- default-ubuntu-1404: Error Resolving Cookbooks for Run List:
+I, [2016-12-08T22:31:37.311748 #5063]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2016-12-08T22:31:37.311905 #5063]  INFO -- default-ubuntu-1404: 
+I, [2016-12-08T22:31:37.312178 #5063]  INFO -- default-ubuntu-1404: Missing Cookbooks:
+I, [2016-12-08T22:31:37.312477 #5063]  INFO -- default-ubuntu-1404: ------------------
+I, [2016-12-08T22:31:37.312804 #5063]  INFO -- default-ubuntu-1404: No such cookbook: gedc
+I, [2016-12-08T22:31:37.313059 #5063]  INFO -- default-ubuntu-1404: 
+I, [2016-12-08T22:31:37.313271 #5063]  INFO -- default-ubuntu-1404: Expanded Run List:
+I, [2016-12-08T22:31:37.313423 #5063]  INFO -- default-ubuntu-1404: ------------------
+I, [2016-12-08T22:31:37.313595 #5063]  INFO -- default-ubuntu-1404: * gedc::default
+I, [2016-12-08T22:31:37.313709 #5063]  INFO -- default-ubuntu-1404: 
+I, [2016-12-08T22:31:37.313855 #5063]  INFO -- default-ubuntu-1404: Platform:
+I, [2016-12-08T22:31:37.314049 #5063]  INFO -- default-ubuntu-1404: ---------
+I, [2016-12-08T22:31:37.314927 #5063]  INFO -- default-ubuntu-1404: x86_64-linux
+I, [2016-12-08T22:31:37.315141 #5063]  INFO -- default-ubuntu-1404: 
+I, [2016-12-08T22:31:37.315320 #5063]  INFO -- default-ubuntu-1404: 
+I, [2016-12-08T22:31:37.315522 #5063]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2016-12-08T22:31:37.315799 #5063]  INFO -- default-ubuntu-1404: [2016-12-09T03:31:36+00:00] ERROR: Running exception handlers
+I, [2016-12-08T22:31:37.315981 #5063]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2016-12-08T22:31:37.316215 #5063]  INFO -- default-ubuntu-1404: [2016-12-09T03:31:36+00:00] ERROR: Exception handlers complete
+I, [2016-12-08T22:31:37.316640 #5063]  INFO -- default-ubuntu-1404: Chef Client failed. 0 resources updated in 01 seconds
+I, [2016-12-08T22:31:37.317415 #5063]  INFO -- default-ubuntu-1404: [2016-12-09T03:31:36+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2016-12-08T22:31:37.317633 #5063]  INFO -- default-ubuntu-1404: [2016-12-09T03:31:36+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2016-12-08T22:31:37.317813 #5063]  INFO -- default-ubuntu-1404: [2016-12-09T03:31:36+00:00] ERROR: 412 "Precondition Failed"
+I, [2016-12-08T22:31:37.349453 #5063]  INFO -- default-ubuntu-1404: [2016-12-09T03:31:36+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2016-12-08T22:31:37.368111 #5063] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2016-12-08T22:31:37.368245 #5063] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2016-12-08T22:31:37.368269 #5063] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2016-12-08T22:31:37.368280 #5063] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --no-color --json-attributes /tmp/kitchen/dna.json  --force-formatter
+']
+E, [2016-12-08T22:31:37.368290 #5063] ERROR -- default-ubuntu-1404: ----------------------
+E, [2016-12-08T22:31:37.368298 #5063] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2016-12-08T22:31:37.368305 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/provisioner/base.rb:86:in `rescue in call'
+E, [2016-12-08T22:31:37.368312 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/provisioner/base.rb:89:in `call'
+E, [2016-12-08T22:31:37.368320 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:380:in `block in converge_action'
+E, [2016-12-08T22:31:37.368327 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2016-12-08T22:31:37.368336 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-12-08T22:31:37.368344 #5063] ERROR -- default-ubuntu-1404: /usr/local/Cellar/ruby/2.3.1_2/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-08T22:31:37.368351 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-12-08T22:31:37.368358 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:376:in `converge_action'
+E, [2016-12-08T22:31:37.368366 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-12-08T22:31:37.368373 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-12-08T22:31:37.368380 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-12-08T22:31:37.368388 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-12-08T22:31:37.368395 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-12-08T22:31:37.368405 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-12-08T22:31:37.368413 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-12-08T22:31:37.368420 #5063] ERROR -- default-ubuntu-1404: ----End Backtrace-----
+E, [2016-12-08T22:31:37.368427 #5063] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2016-12-08T22:31:37.368434 #5063] ERROR -- default-ubuntu-1404: Class: Kitchen::Transport::SshFailed
+E, [2016-12-08T22:31:37.368441 #5063] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --no-color --json-attributes /tmp/kitchen/dna.json  --force-formatter
+']
+E, [2016-12-08T22:31:37.368448 #5063] ERROR -- default-ubuntu-1404: ----------------------
+E, [2016-12-08T22:31:37.368455 #5063] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2016-12-08T22:31:37.368462 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/provisioner/base.rb:86:in `rescue in call'
+E, [2016-12-08T22:31:37.368473 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/provisioner/base.rb:89:in `call'
+E, [2016-12-08T22:31:37.368482 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:380:in `block in converge_action'
+E, [2016-12-08T22:31:37.368490 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2016-12-08T22:31:37.368498 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-12-08T22:31:37.368505 #5063] ERROR -- default-ubuntu-1404: /usr/local/Cellar/ruby/2.3.1_2/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-08T22:31:37.368512 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-12-08T22:31:37.368519 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:376:in `converge_action'
+E, [2016-12-08T22:31:37.368526 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-12-08T22:31:37.368533 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-12-08T22:31:37.368540 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-12-08T22:31:37.368547 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-12-08T22:31:37.368557 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-12-08T22:31:37.368564 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-12-08T22:31:37.368572 #5063] ERROR -- default-ubuntu-1404: /usr/local/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-12-08T22:31:37.368579 #5063] ERROR -- default-ubuntu-1404: ----End Backtrace-----

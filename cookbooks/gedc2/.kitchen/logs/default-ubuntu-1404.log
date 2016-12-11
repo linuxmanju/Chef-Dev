@@ -1,0 +1,42 @@
+I, [2016-12-11T01:41:06.282695 #8609]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2016-12-11T01:41:06.283264 #8609]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-12-11T01:41:06.283351 #8609]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-12-11T01:41:06.283697 #8609]  INFO -- default-ubuntu-1404: Preparing current project directory as a cookbook
+I, [2016-12-11T01:41:06.287366 #8609]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-12-11T01:41:06.289718 #8609]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2016-12-11T01:41:06.488025 #8609]  INFO -- default-ubuntu-1404: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-12-11T01:41:06.496568 #8609]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-12-11T01:41:07.383492 #8609]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.16.42
+I, [2016-12-11T01:41:08.641990 #8609]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["gedc2::default"]
+I, [2016-12-11T01:41:08.658444 #8609]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2016-12-11T01:41:08.660036 #8609]  INFO -- default-ubuntu-1404:   - gedc2 (0.1.0)
+I, [2016-12-11T01:41:08.660413 #8609]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2016-12-11T01:41:08.660825 #8609]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2016-12-11T01:41:08.668754 #8609]  INFO -- default-ubuntu-1404: Converging 1 resources
+I, [2016-12-11T01:41:08.668951 #8609]  INFO -- default-ubuntu-1404: Recipe: gedc2::default
+I, [2016-12-11T01:41:08.673484 #8609]  INFO -- default-ubuntu-1404:   * gedc2_gedocker[abcd] action installdebian
+I, [2016-12-11T01:41:08.674101 #8609]  INFO -- default-ubuntu-1404: lsb_release -sc
+I, [2016-12-11T01:41:08.728645 #8609]  INFO -- default-ubuntu-1404: trusty
+I, [2016-12-11T01:41:08.728704 #8609]  INFO -- default-ubuntu-1404: 
+I, [2016-12-11T01:41:08.728724 #8609]  INFO -- default-ubuntu-1404:     * log[message] action write
+I, [2016-12-11T01:41:08.728747 #8609]  INFO -- default-ubuntu-1404:     
+I, [2016-12-11T01:41:09.154978 #8609]  INFO -- default-ubuntu-1404:     * execute[Add Apt keys] action run
+I, [2016-12-11T01:41:09.155039 #8609]  INFO -- default-ubuntu-1404:       - execute apt-key adv \
+I, [2016-12-11T01:41:09.155084 #8609]  INFO -- default-ubuntu-1404:               --keyserver hkp://ha.pool.sks-keyservers.net:80 \
+I, [2016-12-11T01:41:09.155107 #8609]  INFO -- default-ubuntu-1404:               --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+I, [2016-12-11T01:41:09.155123 #8609]  INFO -- default-ubuntu-1404:     * template[/etc/apt/sources.list.d/docker.list] action create
+I, [2016-12-11T01:41:09.155136 #8609]  INFO -- default-ubuntu-1404:       - create new file /etc/apt/sources.list.d/docker.list
+I, [2016-12-11T01:41:09.155149 #8609]  INFO -- default-ubuntu-1404:       - update content in file /etc/apt/sources.list.d/docker.list from none to f87476
+I, [2016-12-11T01:41:09.155161 #8609]  INFO -- default-ubuntu-1404:       --- /etc/apt/sources.list.d/docker.list	2016-12-11 06:25:22.347566999 +0000
+I, [2016-12-11T01:41:09.155173 #8609]  INFO -- default-ubuntu-1404:       +++ /etc/apt/sources.list.d/.chef-docker20161211-11942-192xx0o.list	2016-12-11 06:25:22.347566999 +0000
+I, [2016-12-11T01:41:09.155296 #8609]  INFO -- default-ubuntu-1404:       @@ -1 +1,2 @@
+I, [2016-12-11T01:41:09.155611 #8609]  INFO -- default-ubuntu-1404:       +deb https://apt.dockerproject.org/repo  main
+I, [2016-12-11T01:41:09.155980 #8609]  INFO -- default-ubuntu-1404:       - change mode from '' to '0744'
+I, [2016-12-11T01:41:09.156206 #8609]  INFO -- default-ubuntu-1404:       - change owner from '' to 'root'
+I, [2016-12-11T01:41:09.157072 #8609]  INFO -- default-ubuntu-1404:       - change group from '' to 'root'
+I, [2016-12-11T01:41:09.157355 #8609]  INFO -- default-ubuntu-1404:   
+I, [2016-12-11T01:41:09.181984 #8609]  INFO -- default-ubuntu-1404: 
+I, [2016-12-11T01:41:09.182163 #8609]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2016-12-11T01:41:09.182299 #8609]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2016-12-11T01:41:09.182537 #8609]  INFO -- default-ubuntu-1404: Chef Client finished, 4/4 resources updated in 01 seconds
+I, [2016-12-11T01:41:09.228019 #8609]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (0m2.94s).
