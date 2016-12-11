@@ -8,6 +8,6 @@ class Shell_out
   require 'mixlib/shellout'
   a = Mixlib::ShellOut.new(command)
   a.run_command
-  puts a.stdout
+  return a.stdout.chomp
 end
 end
