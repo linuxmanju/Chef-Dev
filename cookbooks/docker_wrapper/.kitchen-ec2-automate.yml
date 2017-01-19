@@ -1,0 +1,62 @@
+# GE ServiceOps Automate AWS Kitchen Pattern
+---
+driver:
+  name: ec2
+  region: us-east-1
+  availability_zone: a
+  subnet_id: subnet-e5d4a6bc
+  security_group_ids: ['sg-78fb5e05']
+  tags:
+    Name: <%= ENV['KITCHEN_INSTANCE_NAME'] || 'delivery-kitchen-instance' %>
+    UAI: UAI2000169
+  instance_type: 't2.micro'
+  image_id: ami-c7e96fd0
+
+
+transport:
+  ssh_key: <%= ENV['KITCHEN_EC2_SSH_KEY_PATH'] %>
+
+provisioner:
+  name: chef_zero
+  
+verifier:
+  name: inspec
+  format: doc
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[svops_docker::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
+
+## linux 
+# instance_type: t2.micro # small
+# instance_type: t2.large # large
+# instance_type: m4.medium # performance 
+
+## ubuntu
+# image_id: ami-c7e96fd0
+# transport username: ubuntu
+# transport name: ssh  
+
+## centos6
+# image_id: ami-79f6706e
+# transport username: gecloud
+# transport name: ssh
+
+## centos7
+# image_id: ami-5910924e
+# transport username: gecloud
+# transport name: ssh
+
+## windows
+# driver image_id: ami-bade19d7
+# transport username: Administrator
+# transport name: winrm
+# instance_type: m4.large

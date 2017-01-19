@@ -1,0 +1,11 @@
+name             'svops_docker'
+maintainer       'GE'
+maintainer_email 'manjunath.singh@ge.com'
+license          'All rights reserved'
+description      'Installs/Configures svops_docker'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+issues_url       'https://rally1.rallydev.com/#/59591745691d/detail/task/82592702028'
+source_url       'https://github.build.ge.com/GEIP-DevOps/svops_docker'
+version          '0.1.4'
+depends 'docker'
+depends 'apt'
