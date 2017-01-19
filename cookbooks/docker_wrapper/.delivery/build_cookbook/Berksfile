@@ -1,9 +1,0 @@
-source 'https://supermarket.chef.io'
-
-metadata
-
-group :delivery do
-  cookbook 'geip_delivery_truck', git: 'https://github.build.ge.com/GEIP-DevOps/geip_delivery_truck'
-  cookbook 'geip_delivery_provision', git: 'https://github.build.ge.com/GEIP-DevOps/geip_delivery_provision'
-  cookbook 'test', path: './test/fixtures/cookbooks/test'
-end
